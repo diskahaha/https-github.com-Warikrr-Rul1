@@ -1,7 +1,7 @@
 const moment = require('moment-timezone')
 let handler = m => m
 handler.all = async function (m) {
-	let pp = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg'
+	let pp = 'https://telegra.ph/file/61f2d6d9694b49a2ce7aa.jpg'
 	try {
 		pp = await this.profilePictureUrl(m.sender, 'image')
 	} catch (e) {
@@ -12,7 +12,7 @@ handler.all = async function (m) {
         const u = await conn.clockString(_uptime)
         global.run = '𝐀𝐤𝐭𝐢𝐟 𝐒𝐞𝐥𝐚𝐦𝐚' + ' ' + u
         global.ucapan = ucapan()
-        global.col = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg'
+        global.col = 'https://telegra.ph/file/61f2d6d9694b49a2ce7aa.jpg'
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 		global.users = db.data.users[m.sender]
 		global.chats = db.data.chats[m.chat]
