@@ -58,7 +58,6 @@ handler.all = async function (m) {
 		"extendedTextMessage": {
                  "text":wm,
                  "title": wm,
-                 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')
                         }
 	                  } 
                      }
@@ -68,7 +67,7 @@ handler.all = async function (m) {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"by : 𝕭𝖔𝖙 ༢࿔ྀ","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"by : 𝕭𝖔𝖙 ༢࿔ྀ","h": `${wm}`}}
 	}
         
             const ftoko = {
@@ -80,8 +79,7 @@ key: {
 			"productMessage": {
 				"product": {
 					"productImage":{
-						"mimetype": "image/jpeg",
-						"jpegThumbnail": fs.readFileSync('./src/logo.jpg') //Gambarnye
+						"mimetype": "image/jpeg,
 					},
 					"title": wm, //Kasih namalu 
 					"description": data.namabot, 
@@ -101,8 +99,7 @@ key: {
                         },
        message: {
                     documentMessage: {
-                    title: wm, 
-                    jpegThumbnail: fs.readFileSync('./src/logo.jpg')
+                    title: wm,
                           }
                         }
                       }
@@ -119,7 +116,6 @@ key: {
 			"inviteCode": "null",
 			"groupName": "☬𝚁𝚊𝚡𝚌𝚎𝚄1�71ￄ1�77 ༼༽𝚡 𝚎𝚟𝚒𝚕 𝐎𝔣ᶄ1�71ￄ1�77 ◄1�71ￄ1�77", 
             "caption": wm, 
-            'jpegThumbnail': fs.readFileSync('./src/logo.jpg')
 		}
 	}
 }
@@ -137,7 +133,6 @@ key: {
                  'seconds': '999999999', 
                  'gifPlayback': 'true', 
                  'caption': wm,
-                 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')
                         }
                        }
                       }
