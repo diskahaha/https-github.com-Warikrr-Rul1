@@ -1,21 +1,21 @@
-let handler = async (m, { conn, usedPrefix }) => { 
-      conn.relayMessage(m.chat,  {
-    requestPaymentMessage: {
-      currencyCodeIso4217: 'INR',
-      amount1000: 1339889,
-      requestFrom: m.sender,
-      noteMessage: {
-      extendedTextMessage: {
-      text: `
-Donasi? Yaelah , Aeng Ga Butuh Pulsa/Dana Mek 💦
-`,
-      contextInfo: {
-      externalAdReply: {
-      showAdAttribution: true
-      }}}}}}, {})
+let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
+let text = `
+𝕭𝖔𝖙 ∅༢࿔ྀ
+`
+const templateButtons = [
+    {index: 1, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
+    {index: 2, quickReplyButton: {displayText: 'Owner', id: '.owner'}},
+]
+let tm = {
+text: text,
+footer: global.wm,
+templateButtons: templateButtons,
+image: {url: fla + 'Donasi'}
+}
+conn.sendMessage(m.chat, tm, m)
 }
 handler.help = ['donasi']
-handler.tags = ['about']
+handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
 
-module.exports = handler
+export default handler
