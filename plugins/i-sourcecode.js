@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
       text: '*Nyari Apa Mek?*',
       contextInfo: {
       externalAdReply: {
-      showAdAttribution: true
+      showAdAttribution: false
       }}}}}}, {})
 }
 handler.help = ['sourcecode']
