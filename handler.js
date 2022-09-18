@@ -252,21 +252,21 @@ module.exports = {
                     if (!('closeGroup' in chat)) chat.closeGroup = false
                     if (!isNumber(chat.add)) chat.add = 0
                     if (!('isBanned' in chat)) chat.isBanned = false
-                    if (!('welcome' in chat)) chat.welcome = true
-                    if (!('detect' in chat)) chat.detect = true
+                    if (!('welcome' in chat)) chat.welcome = false
+                    if (!('detect' in chat)) chat.detect = false
                     if (!('sWelcome' in chat)) chat.sWelcome = ''
                     if (!('sBye' in chat)) chat.sBye = ''
                     if (!('sPromote' in chat)) chat.sPromote = ''
                     if (!('sDemote' in chat)) chat.sDemote = ''
                     if (!('desc' in chat)) chat.desc = true
-                    if (!('descUpdate' in chat)) chat.descUpdate = true
+                    if (!('descUpdate' in chat)) chat.descUpdate = false
                     if (!('stiker' in chat)) chat.stiker = false
                     if (!('delete' in chat)) chat.delete = true
                     if (!('antiLink' in chat)) chat.antiLink = true
                     if (!isNumber(chat.expired)) chat.expired = 0
-                    if (!('antiBadword' in chat)) chat.antiBadword = true
-                    if (!('antiDownload' in chat)) chat.antiDownload = true
-                    if (!('antispam' in chat)) chat.antispam = true
+                    if (!('antiBadword' in chat)) chat.antiBadword = false
+                    if (!('antiDownload' in chat)) chat.antiDownload = false
+                    if (!('antispam' in chat)) chat.antispam = false
                     if (!('antitroli' in chat)) chat.antitroli = false
                     if (!('antivirtex' in chat)) chat.antivirtex = false
                     if (!('viewonce' in chat)) chat.viewonce = false
@@ -280,21 +280,21 @@ module.exports = {
                     closeGroup: false,
                     add: 0,
                     isBanned: false,
-                    welcome: true,
+                    welcome: false,
                     detect: true,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    desc: true,
-                    descUpdate: true,
+                    desc: false,
+                    descUpdate: false,
                     stiker: false,
-                    delete: true,
-                    antiLink: true,
+                    delete: false,
+                    antiLink: false,
                     expired: 0,
-                    antiBadword: true,
-                    antiDownload: true,
-                    antispam: true,
+                    antiBadword: false,
+                    antiDownload: false,
+                    antispam: false,
                     antitroli: false,
                     antivirtex: false,
                     viewonce: false,
