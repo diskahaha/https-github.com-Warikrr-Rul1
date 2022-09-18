@@ -612,19 +612,19 @@ module.exports = {
                     for (let user of participants) {
                        let pp = 'https://telegra.ph/file/58acbba00bf7570860e61.png'
                         try {
-                            pp = await this.profilePictureUrl(user, 'image')
+                            pp = await this.profilePictureUrl(user, ' ')
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Yah,si Beban Masuk Grup @user').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Intro 💦 @user').replace('@subject', groupMetadata.desc.toString()) :
                                 (chat.sBye || this.bye || conn.bye || 'Sip, Beban Berkurang @user!')).replace('@user', '@' + user.split('@')[0])
-                                this.send2ButtonImg(id, pp, text, "𝗔𝗿𝘂𝗹𝗹𝗕𝗼𝘁𝘇", "Script Bot", ".sc", "Tampilan Menu", ".menu", fake, { contextInfo: { externalAdReply :{
+                                this.send2ButtonImg(id, pp, text, "「▰▰▰▱▱▱▱▱▱▱」", "Tampilan Menu", ".menu", fake, { contextInfo: { externalAdReply :{
                                 showAdAttribution: true,
                                 mediaUrl: data.sc,
                                 mediaType: 2,
                                 sourceUrl: data.sc,
                                 body: 'Join Kegc Saya Kack',
                                 thumbnail: await(await fetch (img)).buffer(),
-                                title: action === 'add' ? 'Semoga Betah Yah Kak🤗' : 'Yah Kok Keluar Sih😩',
+                                title: action === 'add' ? 'Intro 💦' : 'Yahaha Beban Out 💦',
                                 }}})
                                 }
                     }
